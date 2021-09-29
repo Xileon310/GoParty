@@ -1,6 +1,15 @@
 # IV-Project
 Repositorio para la asignatura de IV
 
-La idea principal es ofrecer una solución para obtener información en tiempo real acerca de los diferentes precios de la luz en las compañías más comunes del país.
+## Idea principal
 
-Para el desarrollo se usará el lenguaje de programación TypeScript junto a las APIs correspondientes para su diseño e implementación. En principio se ha pensado en diseñar un bot de Telegram para la comunicación y visualización de los datos.
+Se pretende desarrollar un software que facilite la gestión de inventario de un taller de mecánica y vehículos. 
+
+## Motivación
+
+Un familiar cercano es dueño de un taller de mecánica bastante grande, necesita disponer de una herramienta (sencilla de utilizar) para facilitar la gestión de su inventario, así como comparación de precios entre distintos proveedores y automatización de tareas tediosas.
+
+Actualmente estos cálculos y tareas los realiza "a mano" o "de memoria", pero no tiene un conocimiento real del ahorro que supone pedir un producto en un proveedor u otro.
+
+Por otro lado, le sería muy útil que desde su propia aplicación pudiese pedir las herramientas y productos que vaya a utilizar sin preocuparse de contactar con el proveedor (actualmente lo realiza llamando manualmente al mismo proveedor), es decir, automatización de una tarea que le ahorraría mucho tiempo.
+
