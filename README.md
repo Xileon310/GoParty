@@ -14,7 +14,3 @@ Actualmente estos cálculos y tareas los realiza "a mano" o "de memoria", pero n
 Por otro lado, le sería muy útil que desde su propia aplicación pudiese pedir las herramientas y productos que vaya a utilizar sin preocuparse de contactar con el proveedor (actualmente lo realiza llamando manualmente al mismo proveedor), es decir, automatización de una tarea que le ahorraría mucho tiempo.
 
 Este ejemplo pretende ser escalado a una hipotética red de talleres.
-
-## Issues
-
-La información detallada de las Issues del proyecto se encuentran [aquí](docs/issues.md)
