@@ -3,19 +3,15 @@ Repositorio para la asignatura de IV.
 
 ## Idea principal
 
-Se pretende desarrollar un software que facilite la gestión de inventario de una cadena de talleres de mecánica y vehículos. 
+Se pretende desarrollar un software en el que los restaurantes puedan enseñar su mejor plato, con fotos e ingredientes principales. A su vez, los distintos usuarios podrán votar o dar feedback acerca de ese plato.
 
-La lógica de negocio principal se basará en estadísticas que podremos adquirir del uso del software por parte de los talleres. Principalmente las estadísticas serán sobre las marcas y modelos de coches más propensos a reparaciones, así como las piezas que se rompan con mayor frecuencia. Este informe es de gran valor para las empresas de automoción.
+Esta información será usada posteriormente para generar informes de valor que serán vendidos a diferentes organismos (supermercados, tiendas locales, ayuntamientos, etc.) con los ingredientes y platos más demandados por zona.
+
+Por otro lado el desarrollo puede beneficiar a los distintos restaurantes, que se darán a conocer por su mejor plato, y no por una nota conjunta (servicio, limpieza, comida, etc.) como por ejemplo en Google Maps o TripAdvisor.
 
 ## Motivación
 
-Un familiar cercano es dueño de un taller de mecánica bastante grande, necesita disponer de una herramienta (sencilla de utilizar) para facilitar la gestión de su inventario, y automatización de tareas tediosas. Por otro lado sería interesante generar informes de coste/beneficio para la empresa.
-
-Actualmente estos cálculos y tareas los realiza "a mano" o "de memoria", pero esto le lleva tiempo y diversos problemas, pudiendo equivocarse en los beneficios o pidiendo piezas que no debiese y teniendo que devolverlas, perdiendo tiempo por el camino.
-
-Por otro lado, le sería muy útil que desde su propia aplicación pudiese pedir las herramientas y productos que vaya a utilizar sin preocuparse de contactar con el proveedor (actualmente lo realiza llamando manualmente al mismo proveedor), es decir, automatización de una tarea que le ahorraría mucho tiempo.
-
-Este ejemplo pretende ser escalado a una hipotética red de talleres.
+Me gustaría entrar en una app durante unas vacaciones y conocer al momento el mejor plato de un restaurante antes de siquiera visitarlo, aunque Google Maps permite ver fotos y/o consultar la carta del restaurante, creo que sería más interesante probar directamente el mejor plato, pues puedes no estar en una zona que normalmente frecuentes.
 
 ## Issues
 
