@@ -11,7 +11,7 @@ Por otro lado el desarrollo puede beneficiar a los distintos restaurantes, que s
 
 ## Motivación
 
-Me gustaría entrar en una app durante unas vacaciones y conocer al momento el mejor plato de un restaurante antes de siquiera visitarlo, aunque Google Maps permite ver fotos y/o consultar la carta del restaurante, creo que sería más interesante probar directamente el mejor plato, pues puedes no estar en una zona que normalmente frecuentes.
+Me gustaría entrar en una app durante unas vacaciones y conocer al momento el mejor plato de un restaurante antes de siquiera visitarlo, aunque Google Maps permite ver fotos y/o consultar la carta del restaurante, no especifica en ningún momento (ni permite a los restaurantes especificarlos de forma oficial) el mejor plato.
 
 ## Issues
 
