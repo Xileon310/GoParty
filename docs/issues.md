@@ -11,9 +11,8 @@ En este fichero se muestran los diferentes usuarios de la aplicación y sus corr
 * [HU1](https://github.com/Xileon310/IV-Project/issues/13) --> El usuario podrá crear una actividad dentro de una categoría concreta, para que otros usuarios se inscriban.
 * [HU2](https://github.com/Xileon310/IV-Project/issues/14) --> El usuario podrá buscar una actividad según varios criterios.
 * [HU3](https://github.com/Xileon310/IV-Project/issues/15) --> El usuario podrá acceder a una actividad e inscribirse en ella.
-* [HU4](https://github.com/Xileon310/IV-Project/issues/16) --> El usuario podrá comunicarse con los demás participantes de una actividad.
-* [HU5](https://github.com/Xileon310/IV-Project/issues/17) --> El usuario accederá a la aplicación por medio de una interfaz intuitiva y fácil de usar para una mayor comodidad.
-* [HU6](https://github.com/Xileon310/IV-Project/issues/18) --> El administrador (o el propio software de la aplicación) podrá generar informes de valor de las actividades más comunes en función de cada zona. Posteriormente esta información podrá ser vendida a diferentes organizaciones o ayuntamientos que pretendan organizar eventos con algún fin.
+* [HU4](https://github.com/Xileon310/IV-Project/issues/17) --> El usuario accederá a la aplicación por medio de una interfaz intuitiva y fácil de usar para una mayor comodidad.
+* [HU5](https://github.com/Xileon310/IV-Project/issues/18) --> El administrador (o el propio software de la aplicación) podrá calcular estadísticas con las actividades más demandadas y su popularidad en función de una zona indicada, con el fin de generar informes de valor (normalmente cada mes) que se guardarán en un formato legible para el usuario (como un .pdf).
 
 
 ## Hitos
