@@ -3,15 +3,17 @@ Repositorio para la asignatura de IV.
 
 ## Idea principal
 
-Se pretende desarrollar un software en el que los restaurantes puedan enseñar su mejor plato, con fotos e ingredientes principales. A su vez, los distintos usuarios podrán votar o dar feedback acerca de ese plato.
+La idea principal es desarrollar una aplicación en la que las personas puedan organizar eventos y conocerse entre sí.
 
-Esta información será usada posteriormente para generar informes de valor que serán vendidos a diferentes organismos (supermercados, tiendas locales, ayuntamientos, etc.) con los ingredientes y platos más demandados por zona.
+Por otro lado, se pretende establecer una clasificación en diferentes categorías (deportes, actividades culturales, etc.) para facilitar la búsqueda y creación a los usuarios.
 
-Por otro lado el desarrollo puede beneficiar a los distintos restaurantes, que se darán a conocer por su mejor plato, y no por una nota conjunta (servicio, limpieza, comida, etc.) como por ejemplo en Google Maps o TripAdvisor.
+Esta aplicación dispondría de un sistema en el que cualquier usuario podría crear una actividad con ciertas características y otros usuarios pudiesen apuntarse a ella. Por otro lado, para facilitar la comunicación, la aplicación crearía un grupo de chat al que se unirían automáticamente los nuevos miembros de la actividad.
 
 ## Motivación
 
-Me gustaría entrar en una app durante unas vacaciones y conocer al momento el mejor plato de un restaurante antes de siquiera visitarlo, aunque Google Maps permite ver fotos y/o consultar la carta del restaurante, no especifica en ningún momento (ni permite a los restaurantes especificarlos de forma oficial) el mejor plato.
+La motivación principal es el hecho de facilitar a las personas realizar actividades en grupo. En muchas ocasiones una persona decide hacer actividades que no se pueden realizar en solitario (jugar a algún deporte cooperativo) o que no están disponibles en su zona (esquiar, rafting, escalada, etc.) pero no conoce a nadie para desarrollarlas.
+
+Es cierto que esta idea puede ser desarrollada en cualquier red social como Facebook o Instagram, pero de esta forma daríamos una mayor facilidad al usuario, centralizando todas las actividades en la misma aplicación y estableciendo comunicaciones organizador-participante de forma más rápida.
 
 ## Issues
 
