@@ -4,15 +4,16 @@ En este fichero se muestran los diferentes usuarios de la aplicación y sus corr
 
 ## Usuarios
 
-- **Restaurante** --> Representa un restaurante, podrá registrar su mejor plato, cambiarlo y actualizarlo.
-- **Usuario** --> Representa a todo usuario de la aplicación que no sea un restaurante, podrá valorar y dar feedback en los platos de los restaurantes, así como buscarlos o listarlos por ID, nombre o zona.
+- **Usuario** --> Representa a todo usuario de la aplicación, podrá crear actividades y apuntarse a ellas.
 
 ## Historias de Usuario
 
-* [HU1](https://github.com/Xileon310/IV-Project/issues/13) --> El usuario se registrará, bien como Usuario o como Restaurante.
-* [HU2](https://github.com/Xileon310/IV-Project/issues/14) --> El usuario debe poder valorar un plato de un restaurante.
-* [HU3](https://github.com/Xileon310/IV-Project/issues/15) --> El administrador de la aplicación (o el propio software) generará informes acerca de los ingredientes más usados en los platos más demandados por los usuarios. Estos informes serán la verdadera lógica de negocio, pudiendo ser más tarde vendidos a empresas de alimentación u organizaciones públicas como ayuntamientos, que por ejemplo, usará la información para una feria de alimentos o un evento. Esta lógica de negocio solo se puede implementar una vez que hay una cantidad de datos numerosa, por ello lo principal es que los usuarios y restaurantes puedan registrarse y empezar a valorar platos.
-* [HU4](https://github.com/Xileon310/IV-Project/issues/16) --> El usuario querrá que la aplicación sea intuitiva y fácil de usar. Esto hace que sea atractiva para captar nuevos usuarios.
+* [HU1](https://github.com/Xileon310/IV-Project/issues/13) --> El usuario podrá crear una actividad dentro de una categoría concreta, para que otros usuarios se inscriban.
+* [HU2](https://github.com/Xileon310/IV-Project/issues/14) --> El usuario podrá buscar una actividad según varios criterios.
+* [HU3](https://github.com/Xileon310/IV-Project/issues/15) --> El usuario podrá acceder a una actividad e inscribirse en ella.
+* [HU4](https://github.com/Xileon310/IV-Project/issues/16) --> El usuario podrá comunicarse con los demás participantes de una actividad.
+* [HU5](https://github.com/Xileon310/IV-Project/issues/17) --> El usuario accederá a la aplicación por medio de una interfaz intuitiva y fácil de usar para una mayor comodidad.
+* [HU6](https://github.com/Xileon310/IV-Project/issues/18) --> El administrador (o el propio software de la aplicación) podrá generar informes de valor de las actividades más comunes en función de cada zona. Posteriormente esta información podrá ser vendida a diferentes organizaciones o ayuntamientos que pretendan organizar eventos con algún fin.
 
 
 ## Hitos
