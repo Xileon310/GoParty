@@ -18,3 +18,8 @@ Es cierto que esta idea puede ser desarrollada en cualquier red social como Face
 ## Issues
 
 La información detallada de las Issues del proyecto se encuentran [aquí](docs/issues.md)
+
+## Elección lenguaje de programación 
+
+Se ha elegido Go como lenguaje de programación para el desarrollo del proyecto porque es un lenguaje que utiliza tipado estático, es sencillo y es eficiente tanto en optimización de la memoria como en velocidad de ejecución.
+
