@@ -13,6 +13,5 @@ type Actividad struct {
 
 // NewActividad inicializa y devuelve un objeto Actividad
 func NewActividad(titulo string, zona Zona) Actividad {
-	a := Actividad{titulo, zona}
-	return a
+	return Actividad{titulo, zona}
 }
