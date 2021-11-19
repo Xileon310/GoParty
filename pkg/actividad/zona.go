@@ -13,11 +13,10 @@ type Zona struct {
 	pais string
 
 	// Código postal de la Zona
-	codigo_postal int32
+	codigo_postal string
 }
 
 // NewZona inicializa y devuelve un objeto Zona
-func NewZona(localidad string, provincia string, pais string, cod_postal int32) Zona {
-	z := Zona{localidad, provincia, pais, cod_postal}
-	return z
+func NewZona(localidad string, provincia string, pais string, cod_postal string) Zona {
+	return Zona{localidad, provincia, pais, cod_postal}
 }
