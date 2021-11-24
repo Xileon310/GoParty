@@ -11,12 +11,9 @@ type Zona struct {
 
 	// País en el que se encuentra la Zona
 	pais string
-
-	// Código postal de la Zona
-	codigo_postal string
 }
 
 // NewZona inicializa y devuelve un objeto Zona
-func NewZona(localidad string, provincia string, pais string, cod_postal string) Zona {
-	return Zona{localidad, provincia, pais, cod_postal}
+func NewZona(localidad string, provincia string, pais string) Zona {
+	return Zona{localidad, provincia, pais}
 }
