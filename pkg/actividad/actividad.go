@@ -2,6 +2,15 @@
 // representar una actividad organizada por un usuario.
 package actividad
 
+// Representa las distintas categorías de actividades
+type Categoria int
+
+const (
+	Ocio Categoria = iota
+	Cultura
+	Deporte
+)
+
 // Actividad representa una actividad
 type Actividad struct {
 	// Titulo de la actividad
