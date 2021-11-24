@@ -18,9 +18,12 @@ type Actividad struct {
 
 	// Zona en la que se desarrolla la actividad
 	zona Zona
+
+	// Categoría a la que pertenece la actividad
+	categoria Categoria
 }
 
 // NewActividad inicializa y devuelve un objeto Actividad
-func NewActividad(titulo string, zona Zona) Actividad {
-	return Actividad{titulo, zona}
+func NewActividad(titulo string, zona Zona, categoria Categoria) Actividad {
+	return Actividad{titulo, zona, categoria}
 }
