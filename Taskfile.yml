@@ -1,0 +1,18 @@
+version: "3"
+
+tasks:
+  check:
+    cmds:
+      - go build ./pkg/...
+      - cmd: echo "Se comprueba la sintaxis de las entidades"
+    silent: true
+
+  installdeps:
+    cmds:
+      - go mod tidy
+      - cmd: echo "Dependencias necesarias incluidas en go.mod"
+    silent: true
+
+  test:
+    cmds:
+      - go test -v ./pkg/...
