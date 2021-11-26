@@ -11,7 +11,8 @@ const (
 	Deporte
 )
 
-// Actividad representa una actividad
+// Representación más básica de la información con la que trabajará
+// la aplicación. Esta clase representa una actividad.
 type Actividad struct {
 	// Titulo de la actividad
 	titulo string
