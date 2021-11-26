@@ -16,3 +16,4 @@ tasks:
   test:
     cmds:
       - go test -v ./pkg/...
+      
