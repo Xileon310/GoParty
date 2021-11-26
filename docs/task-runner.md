@@ -38,7 +38,7 @@ Sus características principales son:
 ### go-task
 
 Realmente hay poca información acerca de este task runner, podemos destacar que las tareas pueden agruparse y ejecutar el programa simplemente para el grupo elegido, o principalmente ejecutar el programa en la función que queramos.
-Por último añadir que se ejecuta en la propia línea de órdenes con ```go-test```, no es necesario que haya un fichero en nuestro directorio como los anteriores.
+Por último añadir que se ejecuta en la propia línea de órdenes con ```go-task```, no es necesario que haya un fichero en nuestro directorio como los anteriores.
 
 No ha sido elegido por su pobre documentación y escasa utilidad dentro de sus opciones.
 
