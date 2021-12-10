@@ -52,3 +52,7 @@ Una vez que hemos clonado el repositorio y estamos dentro de él, podemos utiliz
 * **task check** --> Comprueba la sintaxis de las entidades programadas.
 * **task installdeps** --> Incluye las dependencias que se encuentran en go.mod a la hora de instalar o ejecutar el programa.
 * **task test** --> Ejecuta todos los tests del proyecto.	
+
+## Test unitarios
+
+Toda la información referente a los tests unitarios desarrollados para este proyecto se puede encontrar [aquí](docs/tests.md).
