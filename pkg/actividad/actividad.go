@@ -2,6 +2,8 @@
 // representar una actividad organizada por un usuario.
 package actividad
 
+import "fmt"
+
 // Representa las distintas categorías de actividades
 type Categoria int
 
@@ -24,7 +26,27 @@ type Actividad struct {
 	categoria Categoria
 }
 
+type errorActividad struct {
+	err string
+}
+
+func (e *errorActividad) Error() string {
+	return fmt.Sprintf("Error al crear la actividad: %s", e.err)
+}
+
 // NewActividad inicializa y devuelve un objeto Actividad
-func NewActividad(titulo string, zona Zona, categoria Categoria) Actividad {
-	return Actividad{titulo, zona, categoria}
+func NewActividad(titulo string, zona Zona, categoria Categoria) (Actividad, error) {
+	var act Actividad
+
+	if titulo == "" {
+		return act, &errorActividad{"titulo vacío"}
+	}
+
+	if categoria < Ocio || categoria > Deporte {
+		return act, &errorActividad{"categoría no válida"}
+	}
+
+	act = Actividad{titulo, zona, categoria}
+
+	return act, nil
 }
