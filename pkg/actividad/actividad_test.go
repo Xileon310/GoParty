@@ -34,3 +34,11 @@ func TestTituloNoVacio(t *testing.T) {
 		t.Errorf("Título no válido en objeto Actividad")
 	}
 }
+
+func TestCategoriaNoValida(t *testing.T) {
+	zona := Zona{"Motril", "Granada", "España"}
+	_, err := NewActividad("Ruta de senderismo", zona, 99)
+	if err != nil {
+		t.Errorf("Categoría no válida en objeto Actividad")
+	}
+}
