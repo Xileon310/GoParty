@@ -3,3 +3,4 @@ entidad: pkg/actividad/actividad.go
 automatizar:
   fichero: Taskfile.yml
   orden: task
+test: pkg/actividad/actividad_test.go
