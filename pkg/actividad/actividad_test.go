@@ -18,3 +18,10 @@ func TestProvinciaNoVacia(t *testing.T) {
 		t.Errorf("Provincia no válida en objeto Zona")
 	}
 }
+
+func TestPaisNoVacio(t *testing.T) {
+	_, err := NewZona("Motril", "Granada", "")
+	if err != nil {
+		t.Errorf("País no válido en objeto Zona")
+	}
+}
