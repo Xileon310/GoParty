@@ -25,3 +25,12 @@ func TestPaisNoVacio(t *testing.T) {
 		t.Errorf("País no válido en objeto Zona")
 	}
 }
+
+// ---------------------- Tests de la Entidad Actividad ----------------------
+func TestTituloNoVacio(t *testing.T) {
+	zona := Zona{"Motril", "Granada", "España"}
+	_, err := NewActividad("", zona, Ocio)
+	if err != nil {
+		t.Errorf("Título no válido en objeto Actividad")
+	}
+}
