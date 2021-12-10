@@ -1,5 +1,7 @@
 package actividad
 
+import "fmt"
+
 // Zona representa una localidad en la que puede organizarse
 // una actividad
 type Zona struct {
@@ -13,7 +15,31 @@ type Zona struct {
 	pais string
 }
 
+type errorZona struct {
+	err string
+}
+
+func (e *errorZona) Error() string {
+	return fmt.Sprintf("Error al crear la zona: %s", e.err)
+}
+
 // NewZona inicializa y devuelve un objeto Zona
-func NewZona(localidad string, provincia string, pais string) Zona {
-	return Zona{localidad, provincia, pais}
+func NewZona(localidad string, provincia string, pais string) (Zona, error) {
+	var zona Zona
+
+	if localidad == "" {
+		return zona, &errorZona{"localidad vacía"}
+	}
+
+	if provincia == "" {
+		return zona, &errorZona{"provincia vacía"}
+	}
+
+	if pais == "" {
+		return zona, &errorZona{"país vacío"}
+	}
+
+	zona = Zona{localidad, provincia, pais}
+
+	return zona, nil
 }
