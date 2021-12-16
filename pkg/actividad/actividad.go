@@ -50,3 +50,15 @@ func NewActividad(titulo string, zona Zona, categoria Categoria) (Actividad, err
 
 	return act, nil
 }
+
+func BuscarActividadPorZona(actividades []Actividad, zona Zona) []Actividad {
+	var actividadesZona []Actividad = nil
+
+	for _, act := range actividades {
+		if CompararZona(act.zona, zona) {
+			actividadesZona = append(actividadesZona, act)
+		}
+	}
+
+	return actividadesZona
+}
