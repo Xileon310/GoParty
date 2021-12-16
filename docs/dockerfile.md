@@ -6,7 +6,7 @@ Gracias a docker podemos tener un entorno fácilmente controlable para la ejecuc
 
 ## Integración con Task
 
-Para facilitar al usuario el uso de la aplicación, se ha automatizado la ejecución de los tests en el task runner. Esto se ha conseguido editando el fichero Taskfile.yml y añadiendo una nueva directiva que se invoca con la orden ```task docker``` y que es idéntico a utilizar ```docker run -t -v `pwd`:/app/test xileon/go-party```.
+Para facilitar al usuario el uso de la aplicación, se ha automatizado la ejecución de los tests en el task runner. Esto se ha conseguido editando el fichero Taskfile.yml y añadiendo una nueva directiva que se invoca con la orden ```task docker``` y que es idéntico a utilizar ```docker run -t -v `pwd`:/app/test xileon/goparty```.
 
 ## Imagen utilizada
 

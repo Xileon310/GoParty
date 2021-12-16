@@ -19,5 +19,4 @@ tasks:
 
   docker:
     cmds:
-      - docker run -t -v `pwd`:/app/test xileon/go-party
-      
+      - docker run -t -v `pwd`:/app/test xileon/goparty
