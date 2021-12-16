@@ -7,7 +7,7 @@ La idea principal es desarrollar una aplicación en la que las personas puedan o
 
 Por otro lado, se pretende establecer una clasificación en diferentes categorías (deportes, actividades culturales, etc.) para facilitar la búsqueda y creación a los usuarios.
 
-Esta aplicación dispondría de un sistema en el que cualquier usuario podría crear una actividad con ciertas características y otros usuarios pudiesen apuntarse a ella. Por otro lado, para facilitar la comunicación, la aplicación crearía un grupo de chat al que se unirían automáticamente los nuevos miembros de la actividad.
+Esta aplicación dispondría de un sistema en el que cualquier usuario podría crear una actividad con ciertas características y otros usuarios pudiesen apuntarse a ella, consiguiendo por tanto, que diferentes usuarios se conociesen entre sí y pudiesen realizar la actividad que de otra forma no hubiese sido posible, que a su vez, representa la lógica de negocio de la aplicación.
 
 ## Motivación
 
