@@ -35,3 +35,11 @@ Los tests desarrollados siguen el principio F.I.R.S.T. (Fast, Independent, Repet
 - **Repeteable**: El resultado de las pruebas es independiente del servidor en el que se ejecuta. En este caso se ha realizado tanto localmente como en el contenedor de Docker del Objetivo 5.
 - **Self-validating**: Los tests son completamente compatibles con la ejecución automática que se desarrolla en el Objetivo 5.
 - **Timely**: Los tests han sido desarollados antes de la perfilación del código.
+
+## Relación con la lógica de negocio
+
+El desarrollo de los tests está fuertemente relacionado con la lógica de negocio de la aplicación, puesto que es imperativo que para desarrollar la misma, la aplicación funcione perfectamente.
+
+Gracias a los tests implementados se puede asegurar la correcta creación de una actividad para cumplir el objetivo de que las personas puedan realizar actividades en grupo que de otra forma, no podrían hacer por no conocer a otra gente cuyo interés fuese común.
+
+Por otro lado, también se ha realizado una comprobación para la zona en la que se desarrolla la actividad, pues constituye un papel fundamental en la misma para relacionar a las personas que usen la aplicación.
