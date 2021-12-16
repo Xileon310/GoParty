@@ -43,3 +43,5 @@ El desarrollo de los tests está fuertemente relacionado con la lógica de negoc
 Gracias a los tests implementados se puede asegurar la correcta creación de una actividad para cumplir el objetivo de que las personas puedan realizar actividades en grupo que de otra forma, no podrían hacer por no conocer a otra gente cuyo interés fuese común.
 
 Por otro lado, también se ha realizado una comprobación para la zona en la que se desarrolla la actividad, pues constituye un papel fundamental en la misma para relacionar a las personas que usen la aplicación.
+
+Por último, también se ha añadido un test para la búsqueda de actividades, en este caso nos aseguramos de que se devuelva una actividad que esté registrada para una zona de forma segura.
