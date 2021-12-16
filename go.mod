@@ -1,3 +1,3 @@
-module iv_project
+module goparty
 
 go 1.17
