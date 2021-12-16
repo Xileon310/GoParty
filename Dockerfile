@@ -8,6 +8,6 @@ WORKDIR /app/test
 COPY go.mod ./
 
 RUN go mod download
-RUN go intall github.com/go-task/task/v3/cmd/task@latest
+RUN go install github.com/go-task/task/v3/cmd/task@latest
 
 ENTRYPOINT ["task", "test"]
