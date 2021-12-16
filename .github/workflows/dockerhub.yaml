@@ -3,6 +3,8 @@ name: Publish Docker Image in Docker Hub
 on:
   push:
     branches: [ master ]
+  pull_request:
+    breanches: [ master ]
 
 jobs:
   build:
