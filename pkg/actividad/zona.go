@@ -43,3 +43,11 @@ func NewZona(localidad string, provincia string, pais string) (Zona, error) {
 
 	return zona, nil
 }
+
+func CompararZona(una Zona, otra Zona) bool {
+	if una.localidad == otra.localidad && una.provincia == otra.provincia && una.pais == otra.pais {
+		return true
+	} else {
+		return false
+	}
+}
