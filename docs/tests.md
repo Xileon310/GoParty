@@ -1,6 +1,6 @@
 # Tests unitarios
 
-Para la realización de los tests unitarios que se piden en el objetivo se ha creado un fichero denominado actividad_test.go en el que se declaran los tests correspondientes a la entidad Actividad y al objeto valor Zona. Se ha seguido el estándard de go que puede ser consultado [aquí](https://go.dev/doc/tutorial/add-a-test) en el que se hace uso de la biblioteca testing y se define la sintaxis que deben seguir las funciones: `TestXxxXXX (t *testing.T)`, entre otras cosas.
+Para la realización de los tests unitarios que se piden en el objetivo se ha creado un fichero denominado actividad_test.go en el que se declaran los tests correspondientes a la entidad Actividad y al objeto valor Zona.
 
 El estándar de Go define por defecto el uso de la biblioteca testing, pero existen más alternativas:
 - **Testify**: Permite la definición de características para uso local y generación automática de datos para los tests.
@@ -11,6 +11,8 @@ El estándar de Go define por defecto el uso de la biblioteca testing, pero exis
 La elección de testing viene motivada por dos motivos principales:
 - **Documentación oficial**: La documentación oficial de go hace uso de ella por su simplez y porque viene ya integrada en el propio entorno de go. Esto promueve que sea fácil de utilizar (ya que es fácilmente localizable en la documentación de go) y que no sea necearia instalaciones adicionales.
 - **Sencillez del proyecto**: En este caso la sencillez de la aplicación permite el uso de cualquiera de las bibliotecas habilitadas para testeo, pero tiene menor sentido hacer uso de frameworks pesados llenos de utilizadades que no usaremos.
+
+Se ha seguido el estándard de go que puede ser consultado [aquí](https://go.dev/doc/tutorial/add-a-test) en el que se hace uso de la biblioteca testing y se define la sintaxis que deben seguir las funciones: `TestXxxXXX (t *testing.T)`, entre otras cosas.
 
 Realmente la diferencia radicaba entre usar Testify y testing para este proyecto, y nos decantamos por testing por seguir los estándares marcados para go (que no quiere decir que sea lo óptimo) y por la sencillez de los tests, además de no tener la necesidad de hacer uso de funciones especiales.
 
