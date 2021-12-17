@@ -10,13 +10,13 @@ Para facilitar al usuario el uso de la aplicación, se ha automatizado la ejecuc
 
 ## Imagen utilizada
 
-Podría usarse cualquier imagen para la creación, puesto que se puede arrancar cualquier versión, hacer una instalación limpia del lenguaje golang y las dependencias necesarias y bastaría, pero en este caso, se ha optado por usar una de las imágenes oficiales para mayor comodidad (ya que la diferencia de eficiencia en nuestra aplicación es imperceptible). Una de las posibilidades es usar scratch o centurylink, y el tamaño de la imagen de docker será igual al tamaño de nuestro programa, aunque al ser imágenes básicas, se debe compilar estáticamente la aplicación con las librerías que necesitemos, lo que se traduce en mayor complicación para el usuario.
+Podría usarse cualquier imagen para la creación, puesto que se puede arrancar cualquier versión, hacer una instalación limpia del lenguaje golang y las dependencias necesarias y bastaría, pero en este caso, se ha optado por usar una de las imágenes oficiales de **golang** para mayor comodidad (ya que la diferencia de eficiencia en nuestra aplicación es imperceptible). Una de las posibilidades es usar scratch o centurylink, y el tamaño de la imagen de docker será igual al tamaño de nuestro programa, aunque al ser imágenes básicas, se debe compilar estáticamente la aplicación con las librerías que necesitemos, lo que se traduce en mayor complicación para el usuario.
 
 Para la creación de la imagen que usará la aplicación había diferentes opciones oficiales que cumplen los requisitos:
 - **Imagen basada en Debian**: Esta es la imagen por defecto que debería usar cualquier proyecto go, si no importa el tamaño final de la imagen (esto es importante, pues puede afectar negativamente en el despliegue)
 - **Imagen basada en Alpine**: Esta imagen es mucho más recomendada cuando se trata de minimizar el tamaño de la imagen final.
 
-La principal diferencia entre las anteriores imágenes es que la imagen basada en Alpine no hace uso de las librerías ```glibc```y derivados. En su lugar usa ```musl libc```, lo que puede derivar en problemas si requerimos de la primera opción para nuestro programa. Puesto que nuestra aplicación no presenta ningún problema referente a ello, se ha optado por Alpine como imagen.
+La principal diferencia entre las anteriores imágenes es que la imagen basada en Alpine no hace uso de las librerías ```glibc```y derivados. En su lugar usa ```musl libc```, lo que puede derivar en problemas si requerimos de la primera opción para nuestro programa. Puesto que nuestra aplicación no presenta ningún problema referente a ello, se ha optado por Alpine como imagen, en concreto con Alpine 1.17, aunque sería indiferente hacer uso de la 1.16 o 1.18 también.
 
 ## Dockerfile
 
