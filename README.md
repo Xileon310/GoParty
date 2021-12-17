@@ -56,3 +56,7 @@ Una vez que hemos clonado el repositorio y estamos dentro de él, podemos utiliz
 ## Test unitarios
 
 Toda la información referente a los tests unitarios desarrollados para este proyecto se puede encontrar [aquí](docs/tests.md).
+
+## Docker
+
+Toda la información a la imange docker usada y su proyecto se puede encontrar [aquí](docs/dockerfile.md)
