@@ -16,4 +16,7 @@ tasks:
   test:
     cmds:
       - go test -v ./pkg/...
-      
+
+  docker:
+    cmds:
+      - docker run -t -v `pwd`:/app/test xileon/goparty
