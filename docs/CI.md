@@ -8,7 +8,7 @@ Para realizar la tarea de ejecución de tests se deben elegir dos sistemas de In
 - **Github Checks**: Los sistemas deben tener soporte para gestionar el workflow desde Github y obtener mensajes de información del mismo.
 - **Facilidad de uso**: El sistema debe ser fácil de configurar y que no requiera instalación en un servidor.
 - **Gratuito**: Puesto que este proyecto es completamente docente se buscará un sistema que no sea de pago o en su defecto, que contenga una versión freemium o para estudiantes.
-- **Matrix jobs**: Se usará el sistema de matrix para ejecutar los tests en las dos versiones de Go que actualmente están bajo soporte (1.16 y 1.17).
+- **Matrix jobs**: Se usará el sistema de matrix para ejecutar los tests en las dos versiones de Go que actualmente están bajo soporte (1.16 y 1.17) y que pueden ser consultadas [aquí](https://endoflife.date/go). Cada versión "major" o estable de Golang tiene soporte hasta que dos nuevas versiones "major" son lanzadas.
 
 ## Sistemas de Integración Continua
 
