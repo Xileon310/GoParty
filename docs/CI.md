@@ -24,3 +24,8 @@ Se ha hecho una comparativa entre los sistemas de Integración Continua más fam
 ## Conclusión
 
 Una vez analizados algunos de los principales sistemas de IC, se ha elegido Circle CI y Github Actions puesto que son los únicos que cumplen todos los requisitos anteriormente mencionados.
+
+## Tareas
+
+- **Github Actions**: Se ponen en marcha los tests comprobando el funcionamiento en las dos versiones de Go elegidas haciendo uso de una job matrix.
+- **Circle CI**: Se ponen en marcha los tests haciendo uso del task runner en el contenedor de pruebas Docker que se encuentra en Docker Hub.
