@@ -12,7 +12,7 @@ Para realizar la tarea de ejecución de tests se deben elegir dos sistemas de In
 
 ## Sistemas de Integración Continua
 
-Se ha hecho una comparativa entre los sistemas de Integración Continua más famosos y estas son sus diferencias:
+Se ha hecho una comparativa entre los sistemas de Integración Continua más famosos y a continuación se muestran las diferencias más relevantes.
 
 - **Jenkins**: Proyecto open-source escrito en Java, tiene una interfaz muy intuitiva disponible en Linux, Windows y Mac. Tiene más de 1000 plugins para soportar la integración con muchas herramientas. Su mayor defecto y por lo que no es candidado para ser elegido es porque necesita instalación.
 - **TeamCity**: Desarrollado por el equipo de Jetbrains es uno de los sistemas referentes en la industria de la Integración Continua. Tiene una versión gratuita para pequeños proyectos con no más de 100 configuraciones de construcción. Principalmente no ha sido elegido para este proyecto porque para usarse con golang hay que realizar diversas configuraciones que pueden llegar a ser tediosas (añadir el soporte manualmente desde su página web, editar el Makefile con los comandos necesarios, añadir el flag -json cada vez que se use ```go test```, etc.).
