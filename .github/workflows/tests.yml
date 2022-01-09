@@ -2,14 +2,7 @@ name: Project Tests
 
 on:
   push:
-    paths:
-      - Dockerfile
-      - go.mod
-
   pull_request:
-    paths:
-      - Dockerfile
-      - go.mod
 
 jobs:
   run-tests:
