@@ -6,6 +6,4 @@ task-test:
   image: xileon/goparty:latest
   script:
     - checkout
-    - ls -la
-    - task test
 
