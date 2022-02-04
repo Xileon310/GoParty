@@ -46,7 +46,7 @@ El archivo Dockerfile se ha desarrollado en todo momento intentando seguir lo me
 ## Workflow
 
 Se ha creado un Github Action que crea la imagen del contenedor y la publica en Docker Hub de forma automática.
-La idea principal de este workflow es que solo construya la imagen cada vez que se hace un pull request a la rama maestra, pues se desean utilizar los tests cuando se incorpore nuevo código.
+La idea principal de este workflow es que solo construya la imagen cada vez que se hace un pull request o un push en el que se hayan editado las dependencias del proyecto.
 
 Para el desarrollo de este archivo se ha seguido la siguiente [guía](https://docs.docker.com/ci-cd/github-actions/), en la que se realizan diversos pasos: creación de tokens, ejemplos del archivo YAML a usar y explicación de los diferentes campos del mismo.
 
