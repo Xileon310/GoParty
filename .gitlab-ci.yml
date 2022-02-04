@@ -1,16 +1,16 @@
-image: xileon/goparty:latest
+version: 2.1
 
-stages:
-  - test
+jobs:
+  test-app-ci:
+    docker:
+      - image: xileon/goparty:latest
+    steps:
+      - checkout
+      - run:
+          name: "Test app"
+          command: "task test"
 
-task-test:
-  stage: test
-  script:
-    - checkout
-    - docker run $CI_REGISTRY_IMAGE:latest task test
-  # Run this job in a branch where a Dockerfile exists
-  rules:
-    - if: $CI_COMMIT_BRANCH
-      exists:
-        - Dockerfile
-
+workflows:
+  test-app-workflow:
+    jobs:
+      - test-app-ci
