@@ -1,5 +1,8 @@
 image: xileon/goparty:latest
 
+stages:
+  - test
+
 task-test:
   stage: test
   script:
