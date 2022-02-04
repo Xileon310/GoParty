@@ -1,16 +1,11 @@
-version: 2.1
+image: xileon/goparty:latest
 
-jobs:
-  test-app-ci:
-    docker:
-      - image: xileon/goparty:latest
-    steps:
-      - checkout
-      - run:
-          name: "Test app"
-          command: "task test"
+stages:
+  - test
 
-workflows:
-  test-app-workflow:
-    jobs:
-      - test-app-ci
+task-test:
+  stage: test
+  script:
+    - checkout
+    - docker run $CI_REGISTRY_IMAGE task test
+
