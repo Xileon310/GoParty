@@ -6,7 +6,8 @@ stages:
 task-test:
   stage: test
   script:
-      - docker run $CI_REGISTRY_IMAGE:latest task test
+    - checkout
+    - docker run $CI_REGISTRY_IMAGE:latest task test
   # Run this job in a branch where a Dockerfile exists
   rules:
     - if: $CI_COMMIT_BRANCH
