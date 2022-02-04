@@ -4,8 +4,8 @@ on: [push, pull_request]
 
 jobs:
   test-app-github-action:
-    docker:
-      - image: xileon/goparty:latest
+    runs-on: xileon/goparty:latest
+    name: "Test docker image"
     steps:
       - checkout
       - run:
