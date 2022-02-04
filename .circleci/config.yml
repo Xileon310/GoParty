@@ -14,4 +14,3 @@ workflows:
   test-app-workflow:
     jobs:
       - test-app-ci
-
