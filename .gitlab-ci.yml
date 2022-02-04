@@ -1,9 +1,0 @@
-stages:
-  - test
-
-task-test:
-  stage: test
-  image: xileon/goparty:latest
-  script:
-    - checkout
-
