@@ -1,11 +1,10 @@
-image: xileon/goparty:latest
-
 stages:
   - test
 
 task-test:
   stage: test
+  image: xileon/goparty:latest
   script:
     - checkout
-    - docker run $CI_REGISTRY_IMAGE task test
+    - docker run task test
 
