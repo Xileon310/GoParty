@@ -59,4 +59,8 @@ Toda la información referente a los tests unitarios desarrollados para este pro
 
 ## Docker
 
-Toda la información a la imange docker usada y su proyecto se puede encontrar [aquí](docs/dockerfile.md)
+Toda la información a la imagen docker usada y su proyecto se puede encontrar [aquí](docs/dockerfile.md)
+
+## Sistemas de Integración Continua
+
+Toda la información referente a los sistemas de Integración Continua elegidos se puede encontrar [aquí](docs/CI.md)
