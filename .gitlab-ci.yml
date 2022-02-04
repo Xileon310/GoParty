@@ -6,5 +6,5 @@ task-test:
   image: xileon/goparty:latest
   script:
     - checkout
-    - docker run task test
+    - task test
 
