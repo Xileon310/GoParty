@@ -134,4 +134,3 @@ Puesto que son las últimas versiones derivadas de las principales (1.16 y 1.17 
 
 - **Buddy**: Se ponen en marcha los tests comprobando el funcionamiento en la versión 1.16.13 (última versión de golang de 1.16). En este caso es una tarea muy simple, pues sólo hay que asignar el proyecto de Github en Buddy, crear un workflow y especificar la versión que se desea (por defecto testea el proyecto). De querer hacerlo con más versiones, podríamos ejecutarlas todas concurrentemente.
 - **Circle CI**: Se ponen en marcha los tests haciendo uso del task runner en el contenedor de pruebas Docker que se encuentra en Docker Hub. En este caso la imagen se basa en la imagen oficial de golang con versión 1.17.6, usando la distribución de Linux alpine.
-
