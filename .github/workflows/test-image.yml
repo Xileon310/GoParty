@@ -7,7 +7,6 @@ jobs:
     runs-on: xileon/goparty:latest
     name: "Test docker image"
     steps:
-      - checkout
       - run:
           name: "Test app"
           command: "task test"
