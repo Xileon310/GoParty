@@ -1,7 +1,9 @@
 version: 2.1
 
+on: [push, pull_request]
+
 jobs:
-  test-app-ci:
+  test-app-github-action:
     docker:
       - image: xileon/goparty:latest
     steps:
@@ -11,6 +13,6 @@ jobs:
           command: "task test"
 
 workflows:
-  test-app-workflow:
+  test-app-workflow-github-action:
     jobs:
-      - test-app-ci
+      - test-app-github-action
