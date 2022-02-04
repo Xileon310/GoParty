@@ -21,3 +21,4 @@
     - "/:/src/github.com/Xileon310/GoParty"
     cache_base_image: true
     shell: "BASH"
+
