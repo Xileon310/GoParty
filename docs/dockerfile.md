@@ -16,7 +16,7 @@ Para la creación de la imagen que usará la aplicación había diferentes opcio
 - **Imagen basada en Debian**: Esta es la imagen por defecto que debería usar cualquier proyecto go, si no importa el tamaño final de la imagen (esto es importante, pues puede afectar negativamente en el despliegue)
 - **Imagen basada en Alpine**: Esta imagen es mucho más recomendada cuando se trata de minimizar el tamaño de la imagen final.
 
-La principal diferencia entre las anteriores imágenes es que la imagen basada en Alpine no hace uso de las librerías ```glibc```y derivados. En su lugar usa ```musl libc```, lo que puede derivar en problemas si requerimos de la primera opción para nuestro programa. Puesto que nuestra aplicación no presenta ningún problema referente a ello, se ha optado por Alpine como imagen para que ocupe el menor tamaño posible (lo que agiliza el despliegue), en concreto con Alpine 1.17, aunque sería indiferente hacer uso de la 1.16 o 1.18 también.
+La principal diferencia entre las anteriores imágenes es que la imagen basada en Alpine no hace uso de las librerías ```glibc```y derivados. En su lugar usa ```musl libc```, lo que puede derivar en problemas si requerimos de la primera opción para nuestro programa. Puesto que nuestra aplicación no presenta ningún problema referente a ello, se ha optado por Alpine como imagen para que ocupe el menor tamaño posible (lo que agiliza el despliegue), en concreto con Alpine 1.17.6, aunque sería indiferente hacer uso de la 1.16 o 1.18 también.
 
 ## Dockerfile
 
