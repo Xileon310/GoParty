@@ -1,4 +1,4 @@
-FROM golang:1.17-alpine
+FROM golang:1.17.6-alpine
 LABEL maintainer="joseluis404@correo.ugr.es"
 
 RUN addgroup -S goparty && adduser -S goparty -G goparty
