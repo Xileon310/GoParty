@@ -1,8 +1,15 @@
 name: Publish Docker Image in Docker Hub
 
 on:
+  push:
+    paths:
+      - Dockerfile
+      - go.mod
+
   pull_request:
-    branches: [ master ]
+    paths:
+      - Dockerfile
+      - go.mod
 
 jobs:
   build:
