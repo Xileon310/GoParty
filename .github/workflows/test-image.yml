@@ -6,4 +6,4 @@ jobs:
     name: "Test docker image"
     steps:
       - name: Test app
-        command: "task test"
+        uses: "task test"
