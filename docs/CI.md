@@ -120,6 +120,8 @@ Puesto que se elaboró el objetivo antes de que estableciese el requisito de no 
 
 La primera opción fue usar Git Lab (como se puede ver en el progreso del repositorio), pero no fui capaz de hacerlo funcionar (y su documentación no ayudó), por lo que pensé en Travis CI, pero no pude usarlo porque al realizar el registro pedía un parámetro (VAT ID) que no tenía. Por último, utilicé Github Actions ya que Semaphore CI da muy pocos minutos (poco más de 20h).
 
+**NOTA:** Por alguna extraña razón, simplemente haciendo pull del contenedor en Git Lab y Buddy, me da error de task, mientras que en Circle CI no pasa. Por lo que se ha optado a que Buddy simplemente ejecute la versió 1.16.13.
+
 ## Conclusión
 
 Una vez analizados algunos de los principales sistemas de IC, se ha elegido **Circle CI**, **Github Actions** y **Buddy** para la elaboración de los workflows de la asignatura.
@@ -140,4 +142,4 @@ Puesto que son las últimas versiones derivadas de las principales (1.16 y 1.17 
 
 - **Buddy**: Se ponen en marcha los tests comprobando el funcionamiento en la versión 1.16.13 (última versión de golang de 1.16). En este caso es una tarea muy simple, pues sólo hay que asignar el proyecto de Github en Buddy, crear un workflow y especificar la versión que se desea (por defecto testea el proyecto). De querer hacerlo con más versiones, podríamos ejecutarlas todas concurrentemente.
 - **Circle CI**: Se ponen en marcha los tests haciendo uso del task runner en el contenedor de pruebas Docker que se encuentra en Docker Hub. En este caso la imagen se basa en la imagen oficial de golang con versión 1.17.6, usando la distribución de Linux alpine.
-- **Github Actions**: Se ponen en marcha los tests haciendo uso del task runner en el contenedor de pruebas Docker que se encuentra en Docker Hub. En este caso la imagen se basa en la imagen oficial de golang con versión 1.17.6, usando la distribución de Linux alpine.
+- **Github Actions**: Se ponen en marcha los tests comprobando el funcionamiento en la versión 1.16.13 (última versión de golang de 1.16). En este caso es una tarea muy simple, pues sólo hay que asignar el proyecto de Github en Buddy, crear un workflow y especificar la versión que se desea (por defecto testea el proyecto). De querer hacerlo con más versiones, podríamos ejecutarlas todas concurrentemente.
