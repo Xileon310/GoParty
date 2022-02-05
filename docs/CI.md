@@ -118,7 +118,7 @@ Como podemos apreciar, los CIs que tienen mejores puntuaciones son Circle CI y B
 
 Puesto que se elaboró el objetivo antes de que estableciese el requisito de no usar Circle CI por su popularidad entre los alumnos (en ordinaria), he dejado el archivo correspondiente. Por lo que se han usado 3 CI (aunque 2 de ellos hacen lo mismo).
 
-La primera opción fue usar Git Lab (como se puede ver en el progreso del repositorio), pero no fui capaz de hacerlo funcionar, por lo que pensé en Travis CI, pero no pude usarlo porque al realizar el registro pedía un parámetro (VAT ID) que no tenía. Por último, utilicé Github Actions ya que Semaphore CI da muy pocos minutos (poco más de 20h).
+La primera opción fue usar Git Lab (como se puede ver en el progreso del repositorio), pero no fui capaz de hacerlo funcionar (y su documentación no ayudó), por lo que pensé en Travis CI, pero no pude usarlo porque al realizar el registro pedía un parámetro (VAT ID) que no tenía. Por último, utilicé Github Actions ya que Semaphore CI da muy pocos minutos (poco más de 20h).
 
 ## Conclusión
 
