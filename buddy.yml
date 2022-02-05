@@ -16,6 +16,7 @@
     execute_commands:
     - "export GOPATH=/"
     - "export GO15VENDOREXPERIMENT=1"
+    - "cd /app/test"
     - "task test"
     mount_filesystem_disable: true
     cache_base_image: true
