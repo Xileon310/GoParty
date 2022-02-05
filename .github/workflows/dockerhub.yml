@@ -6,11 +6,6 @@ on:
       - Dockerfile
       - go.mod
 
-  pull_request:
-    paths:
-      - Dockerfile
-      - go.mod
-
 jobs:
   build:
     runs-on: ubuntu-latest
