@@ -10,7 +10,7 @@
   actions:
   - action: "test-version-1.16"
     type: "BUILD"
-    working_directory: "/app/test"
+    working_directory: "/app/test/."
     docker_image_name: "xileon/goparty"
     docker_image_tag: "latest"
     execute_commands:
