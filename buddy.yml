@@ -14,8 +14,7 @@
     docker_image_name: "xileon/goparty"
     docker_image_tag: "latest"
     execute_commands:
-    - "export GOPATH=/"
-    - "export GO15VENDOREXPERIMENT=1"
+      - "task test"
     volume_mappings:
     - "/:/src/github.com/Xileon310/GoParty"
     cache_base_image: true
