@@ -86,10 +86,10 @@ Realmente los 4 primeros CIs tienen velocidades muy parecidas, pero la sorpresa 
 Es difícil responder a las preguntas: ¿Es buena esta documentación? ¿Este CI tiene mejor documentación que otro? Por lo que esta clasificación será la más subjetiva de todas, y se basará en la facilidad para encontrar información que me haya permitido desarrollar los workflows correspondientes en cada CI.
 
 1. Circle CI
-2. Git Lab
-3. Semaphore CI
-4. Github Actions
-5. Buddy 
+2. Semaphore CI
+3. Github Actions
+4. Buddy 
+5. Git Lab
 
 Pese a que Buddy destaca en otros aspectos, su documentación me ha decepcionado,ya que es bastante pobre. Por el lado contrario, Circle CI tiene una gran documentación, sobre todo respecto a la integración con Github y la Checks Api.
 
@@ -99,26 +99,32 @@ A continuación, se mostrará una tabla que resume las anteriores secciones:
 
 | **CI** | **Precio** | **Interfaz** | **Facilidad de Uso** | **Performance** |
 | Circle CI | 1 | 2 | 2 | 1 | 1 |
-| Semaphore CI | 3 | 4 | 3 | 2 | 3 |
-| Buddy | 1 | 1 | 1 | 3 | 5 |
-| Github Actions | 1 | 5 | 4 | 4 | 4 |
-| Git Lab | 2 | 3 | 5 | 5 | 2 |
+| Semaphore CI | 3 | 4 | 3 | 2 | 2 |
+| Buddy | 1 | 1 | 1 | 3 | 4 |
+| Github Actions | 1 | 5 | 4 | 4 | 3 |
+| Git Lab | 2 | 3 | 5 | 5 | 5 |
 
 Si hiciésemos una media de los valores anteriores (siendo 1 el mejor y 5 el peor) quedaría:
 
 Circle CI: 1.4
-Semaphore CI: 3
-Buddy: 2.2
-Github Actions: 3.6
-Git Lab: 3.4
+Semaphore CI: 2.8
+Buddy: 2
+Github Actions: 3.4
+Git Lab: 4
 
 Como podemos apreciar, los CIs que tienen mejores puntuaciones son Circle CI y Buddy. Principalmente en el caso de proyectos sencillos o que nos preocupase el hecho de registrar cuentas en plataformas externas a nuestro gestor de repositorios la mejor integración podría ser Github Actions (considerando que no queremos un sistema que dependa de instalación en servidor). Semaphore CI tiene un muy buen workflow al igual que Buddy, pero su interfaz no es tan buena e intuitiva (pero sí efectiva si se conoce la herramienta).
 
+## Requisitos del objetivo
+
+Puesto que se elaboró el objetivo antes de que estableciese el requisito de no usar Circle CI por su popularidad entre los alumnos (en ordinaria), he dejado el archivo correspondiente. Por lo que se han usado 3 CI (aunque 2 de ellos hacen lo mismo).
+
+La primera opción fue usar Git Lab (como se puede ver en el progreso del repositorio), pero no fui capaz de hacerlo funcionar, por lo que pensé en Travis CI, pero no pude usarlo porque al realizar el registro pedía un parámetro (VAT ID) que no tenía. Por último, utilicé Github Actions ya que Semaphore CI da muy pocos minutos (poco más de 20h).
+
 ## Conclusión
 
-Una vez analizados algunos de los principales sistemas de IC, se ha elegido **Circle CI** y **Buddy** para la elaboración de los workflows de la asignatura.
+Una vez analizados algunos de los principales sistemas de IC, se ha elegido **Circle CI**, **Github Actions** y **Buddy** para la elaboración de los workflows de la asignatura.
 
-Para la integración y elaboración en cada CI se han seguido las siguientes guías: [Circle CI](https://circleci.com/docs/2.0/enable-checks/) y [Buddy](https://buddy.works/guides/golang)
+Para la integración y elaboración en cada CI se han seguido las siguientes guías: [Circle CI](https://circleci.com/docs/2.0/enable-checks/) y [Buddy](https://buddy.works/guides/golang).
 
 ## Versiones utilizadas
 
@@ -134,3 +140,4 @@ Puesto que son las últimas versiones derivadas de las principales (1.16 y 1.17 
 
 - **Buddy**: Se ponen en marcha los tests comprobando el funcionamiento en la versión 1.16.13 (última versión de golang de 1.16). En este caso es una tarea muy simple, pues sólo hay que asignar el proyecto de Github en Buddy, crear un workflow y especificar la versión que se desea (por defecto testea el proyecto). De querer hacerlo con más versiones, podríamos ejecutarlas todas concurrentemente.
 - **Circle CI**: Se ponen en marcha los tests haciendo uso del task runner en el contenedor de pruebas Docker que se encuentra en Docker Hub. En este caso la imagen se basa en la imagen oficial de golang con versión 1.17.6, usando la distribución de Linux alpine.
+- **Github Actions**: Se ponen en marcha los tests haciendo uso del task runner en el contenedor de pruebas Docker que se encuentra en Docker Hub. En este caso la imagen se basa en la imagen oficial de golang con versión 1.17.6, usando la distribución de Linux alpine.
