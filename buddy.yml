@@ -21,3 +21,14 @@
     - "/:/src/github.com/Xileon310/GoParty"
     cache_base_image: true
     shell: "BASH"
+  - action: "Execute: docker run -t -v `pwd`:/app/test xileon/goparty"
+    type: "BUILD"
+    working_directory: "/buddy/goparty"
+    docker_image_name: "library/ubuntu"
+    docker_image_tag: "18.04"
+    execute_commands:
+    - "docker run -t -v `pwd`:/app/test xileon/goparty"
+    volume_mappings:
+    - "/:/buddy/goparty"
+    cache_base_image: true
+    shell: "BASH"
