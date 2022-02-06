@@ -1,0 +1,9 @@
+image: ubuntu:latest
+
+stages:
+  - test
+
+task-test:
+  stage: test
+  script:
+    - docker run -t -v $(pwd):/app/test xileon/goparty
