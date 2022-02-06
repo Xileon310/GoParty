@@ -23,13 +23,12 @@
     shell: "BASH"
   - action: "Execute: docker run -t -v `pwd`:/app/test xileon/goparty"
     type: "BUILD"
-    working_directory: "/buddy/goparty"
-    docker_image_name: "library/ubuntu"
-    docker_image_tag: "18.04"
+    working_directory: "/app/test"
+    docker_image_name: "xileon/goparty"
+    docker_image_tag: "latest"
     execute_commands:
-    - "apt-get update && apt-get install docker -y && service docker start"
-    - "docker run -t -v `pwd`:/app/test xileon/goparty"
+    - "task test"
     volume_mappings:
-    - "/:/buddy/goparty"
+    - "/app/test:/src/github.com/Xileon310/GoParty"
     cache_base_image: true
     shell: "BASH"
