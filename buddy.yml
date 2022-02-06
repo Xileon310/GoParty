@@ -21,3 +21,11 @@
     - "/:/src/github.com/Xileon310/GoParty"
     cache_base_image: true
     shell: "BASH"
+  - action: "Run Docker Image"
+    type: "RUN_DOCKER_CONTAINER"
+    docker_image_name: "xileon/goparty"
+    docker_image_tag: "latest"
+    entrypoint: "git checkout && task test"
+    mount_filesystem_disable: true
+    cache_base_image: true
+    shell: "SH"
