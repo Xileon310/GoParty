@@ -21,14 +21,3 @@
     - "/:/src/github.com/Xileon310/GoParty"
     cache_base_image: true
     shell: "BASH"
-  - action: "Execute: docker run -t -v `pwd`:/app/test xileon/goparty"
-    type: "BUILD"
-    working_directory: "/app/test"
-    docker_image_name: "xileon/goparty"
-    docker_image_tag: "latest"
-    execute_commands:
-    - "task test"
-    volume_mappings:
-    - "/app/test:/src/github.com/Xileon310/GoParty"
-    cache_base_image: true
-    shell: "BASH"
