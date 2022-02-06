@@ -27,6 +27,7 @@
     docker_image_name: "library/ubuntu"
     docker_image_tag: "18.04"
     execute_commands:
+    - "apt-get update && apt-get install docker -y"
     - "docker run -t -v `pwd`:/app/test xileon/goparty"
     volume_mappings:
     - "/:/buddy/goparty"
