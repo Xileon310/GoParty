@@ -1,0 +1,11 @@
+trigger:
+  branches:
+    include:
+      - '*'
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: docker run -t -v `pwd`:/app/test xileon/goparty
+  displayName: 'Task test'
