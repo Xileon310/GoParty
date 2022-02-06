@@ -10,8 +10,6 @@ Para realizar la tarea de ejecución de tests se deben elegir dos sistemas de In
 - **Gratuito**: Ya que este proyecto es completamente docente se buscará un sistema que no sea de pago o en su defecto, que contenga una versión freemium o para estudiantes.
 
 
-- **Matrix jobs**: Se usará el sistema de matrix para ejecutar los tests en las dos versiones de Go que actualmente están bajo soporte (1.16 y 1.17) y que pueden ser consultadas [aquí](https://endoflife.date/go). Cada versión "major" o estable de Golang tiene soporte hasta que dos nuevas versiones "major" son lanzadas.
-
 ## Sistemas de Integración Continua
 
 Se ha hecho una comparativa entre los sistemas de Integración Continua más famosos, todos ellos serían compatibles con nuestro proyecto, puesto que satisfacen los anteriores requisitos. Esta sección se desglosará en diferentes apartados que se han considerado oportunos para la elección.
@@ -143,3 +141,11 @@ Puesto que son las últimas versiones derivadas de las principales (1.16 y 1.17 
 - **Buddy**: Se ponen en marcha los tests comprobando el funcionamiento en la versión 1.16.13 (última versión de golang de 1.16). En este caso es una tarea muy simple, pues sólo hay que asignar el proyecto de Github en Buddy, crear un workflow y especificar la versión que se desea (por defecto testea el proyecto). De querer hacerlo con más versiones, podríamos ejecutarlas todas concurrentemente.
 - **Circle CI**: Se ponen en marcha los tests haciendo uso del task runner en el contenedor de pruebas Docker que se encuentra en Docker Hub. En este caso la imagen se basa en la imagen oficial de golang con versión 1.17.6, usando la distribución de Linux alpine.
 - **Github Actions**: Se ponen en marcha los tests comprobando el funcionamiento en la versión 1.16.13 (última versión de golang de 1.16). En este caso es una tarea muy simple, pues sólo hay que asignar el proyecto de Github en Buddy, crear un workflow y especificar la versión que se desea (por defecto testea el proyecto). De querer hacerlo con más versiones, podríamos ejecutarlas todas concurrentemente.
+
+## Problemas en la resolución del objetivo
+
+El principal problema que se ha encontrado en la resolución ha sido que Circle CI ha funcionado de forma diferente a los demás CIs (Buddy o GitLab), cuando se hace uso de la imagen cargada en DockerHub, en los dos últimos CIs el task runner no encuentra el fichero Taskfile. Sinceramente he investigado todo lo que he podido pero no he encontrado solución a esto. Por otro lado la alternativa que había planteado es correr los tests de forma normal con el comando ```docker run -t -v `pwd`:/app/test xileon/goparty```, que en esencia es lo que realiza el task runner en el Taskfile.
+
+Esta alternativa ha tenido diferentes problemas en los CIs:
+- **Buddy**: la herramienta **docker** no estaba instalada en la imagen, por lo que se ha intentado instalar en tiempo de ejecución (algo como última alternativa, pues retrasaba la ejecución de los tests de forma notoria). Una vez instalado, se intentaba levantar con los gestores de procesos (service / systemctl), pero en ningún caso se conseguía, por lo que no se ha podido ejecutar.
+- **Git Lab**: para la ejecución de comandos de Docker en Git Lab hay varias alternativas, pero la única que podría valer es la de instalar GitLab Runner en nuestro proyecto, que es un programa de CI/CD que envía la información a Git Lab. Ante la imposibilidad de realizar la integración sin necesidad de instalar ningún programa externo, se ha descartado.
