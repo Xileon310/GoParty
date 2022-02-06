@@ -1,0 +1,9 @@
+image: xileon/goparty:latest
+
+stages:
+  - test
+
+task-test:
+  stage: test
+  script:
+    - $(pwd)/app/test
