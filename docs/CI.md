@@ -95,12 +95,13 @@ Pese a que Buddy destaca en otros aspectos, su documentación me ha decepcionado
 
 A continuación, se mostrará una tabla que resume las anteriores secciones:
 
-| **CI** | **Precio** | **Interfaz** | **Facilidad de Uso** | **Performance** |
-| Circle CI | 1 | 2 | 2 | 1 | 1 |
-| Semaphore CI | 3 | 4 | 3 | 2 | 2 |
-| Buddy | 1 | 1 | 1 | 3 | 4 |
-| Github Actions | 1 | 5 | 4 | 4 | 3 |
-| Git Lab | 2 | 3 | 5 | 5 | 5 |
+| **CI** 			| **Precio** | **Interfaz** | **Facilidad de Uso** | **Performance** | **Documentación** |
+| ------------------| ---------- | ------------ | -------------------- | --------------- | ----------------- |
+| Circle CI 		| 1 		 | 2 			| 2 				   | 1 				 | 1 				 |
+| Semaphore CI 		| 3 		 | 4 			| 3 				   | 2 				 | 2 				 |
+| Buddy 			| 1 		 | 1 			| 1 				   | 3 				 | 4 				 |
+| Github Actions 	| 1 		 | 5 			| 4 				   | 4 				 | 3 				 |
+| Git Lab 			| 2 		 | 3 			| 5 				   | 5 				 | 5 				 |
 
 Si hiciésemos una media de los valores anteriores (siendo 1 el mejor y 5 el peor) quedaría:
 
