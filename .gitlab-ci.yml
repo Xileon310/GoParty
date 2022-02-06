@@ -1,4 +1,4 @@
-image: xileon/goparty:latest
+image: ubuntu:latest
 
 stages:
   - test
@@ -6,4 +6,4 @@ stages:
 task-test:
   stage: test
   script:
-    - $(pwd)/app/test
+    - docker run -t -v $(pwd):/app/test xileon/goparty
